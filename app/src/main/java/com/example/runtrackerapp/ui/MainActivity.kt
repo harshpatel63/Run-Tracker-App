@@ -1,5 +1,6 @@
 package com.example.runtrackerapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.runtrackerapp.R
 import com.example.runtrackerapp.databinding.ActivityMainBinding
+import com.example.runtrackerapp.other.Constants.ACTION_SHOW_TRACKING_FRAGMENT
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -17,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        navigateToTrackingFragmentIfNeeded(intent)
 
         binding.apply {
             setSupportActionBar(toolbar)
@@ -31,5 +34,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        if (intent != null) navigateToTrackingFragmentIfNeeded(intent)
+    }
+
+    private fun navigateToTrackingFragmentIfNeeded(intent: Intent){
+        if(intent?.action == ACTION_SHOW_TRACKING_FRAGMENT){
+            findNavController(R.id.navHostFragment).navigate(R.id.actionGlobalTrackingFragment)
+        }
     }
 }
