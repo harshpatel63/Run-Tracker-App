@@ -1,4 +1,4 @@
-package com.example.runtrackerapp
+package com.example.runtrackerapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
