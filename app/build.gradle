@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -87,6 +88,12 @@ dependencies {
     api 'com.google.dagger:dagger-android-support:2.28.1'
     kapt 'com.google.dagger:dagger-android-processor:2.23.2'
 
+    // Dagger (Hilt)
+    implementation "com.google.dagger:hilt-android:2.31.2-alpha"
+    kapt "com.google.dagger:hilt-android-compiler:2.31.2-alpha"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+    kapt "androidx.hilt:hilt-compiler:1.0.0-beta01"
+
     // Easy Permissions
     implementation 'pub.devrel:easypermissions:3.0.0'
 
@@ -95,6 +102,9 @@ dependencies {
 
     // MPAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //Activity KTX for viewmodels
+    implementation "androidx.activity:activity-ktx:1.2.1"
 
     implementation 'android.arch.lifecycle:extensions:1.1.1'
 }
