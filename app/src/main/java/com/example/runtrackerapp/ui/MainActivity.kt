@@ -2,11 +2,12 @@ package com.example.runtrackerapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.View
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.example.runtrackerapp.R
 import com.example.runtrackerapp.databinding.ActivityMainBinding
-import com.example.runtrackerapp.roomDB.dao.RunDao
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        binding.apply {
+            setSupportActionBar(toolbar)
+            bottomNavigationView.setupWithNavController(findNavController(R.id.navHostFragment))
+
+            findNavController(R.id.navHostFragment).addOnDestinationChangedListener { _, destination, _ ->
+                when (destination.id) {
+                    R.id.settingsFragment, R.id.runFragment, R.id.statisticsFragment ->
+                        bottomNavigationView.visibility = View.VISIBLE
+                    else -> bottomNavigationView.visibility = View.GONE
+                }
+            }
+        }
 
     }
 }
