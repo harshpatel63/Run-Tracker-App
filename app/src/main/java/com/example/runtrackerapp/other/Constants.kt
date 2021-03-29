@@ -26,4 +26,6 @@ object Constants {
 
     const val MAP_ZOOM = 15f
 
+    const val TIMER_UPDATE_INTERVAL = 50L
+
 }
