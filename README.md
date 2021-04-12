@@ -2,7 +2,6 @@
 Run Tracker App helps you track your running sessions. It works with your location, time and calories to present all dimensions for your run.
 All the runs are saved in a database which you may see later when needed. Also, the app has a statistics graph to monitor your runs.
 
-## Snapshots of the app
 
 ## Technologies Used
 * MVVM Architecture
@@ -10,6 +9,15 @@ All the runs are saved in a database which you may see later when needed. Also, 
 * Navigation Components
 * Room Database with Coroutines
 * Dependency Injection with Dagger-Hilt
+
+## Snapshots of the app
+<p>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618200358.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618200363.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618200368.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618201074.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618201093.png" width="205" height="434"/></p>
+
 
 # Issues
 Feel free to create new issues or improvement for the app in the [issues](https://github.com/Sci3fic/Run-Tracker-App/issues) section.
