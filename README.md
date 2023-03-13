@@ -12,11 +12,11 @@ All the runs are saved in a database which you may see later when needed. Also, 
 
 ## Snapshots of the app
 <p>
-<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618200358.png" width="205" height="434"/>
-<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618200363.png" width="205" height="434"/>
-<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618200368.png" width="205" height="434"/>
-<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618201074.png" width="205" height="434"/>
-<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/Screenshot_1618201093.png" width="205" height="434"/></p>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/screenshots/Screenshot_1618200358.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/screenshots/Screenshot_1618200363.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/screenshots/Screenshot_1618200368.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/screenshots/Screenshot_1618201074.png" width="205" height="434"/>
+<img src="https://github.com/Sci3fic/Run-Tracker-App/blob/master/screenshots/Screenshot_1618201093.png" width="205" height="434"/></p>
 
 
 # Issues
